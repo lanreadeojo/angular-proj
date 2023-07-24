@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 let stocks : Array<string> = ['AAPL', 'GOOG', 'FB', 'AMZN', 'TWTR']
-let service : string = 'https://angular-in-action-api.herokuapp.com';
+let service : string = 'http://localhost:3000';
 
 export interface StockInterface{
   symbol : string;

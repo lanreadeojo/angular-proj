@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./summary.component.css']
 })
 export class SummaryComponent {
-@Input() stock: any;
+  @Input() stock: any;
 
 isNegative(){
   return (this.stock && this.stock.change < 0);
