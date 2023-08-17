@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "critters": ">=0.0.20",
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
     "@angular/compiler": "^16.1.0",
@@ -23,6 +24,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
+    "critters":">=0.0.20",
     "@angular-devkit/build-angular": "^16.1.4",
     "@angular/cli": "~16.1.4",
     "@angular/compiler-cli": "^16.1.0",
