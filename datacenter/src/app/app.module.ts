@@ -1,17 +1,25 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MetricComponent } from './metric/metric.component';
+import { NodesComponent } from './nodes/nodes.component';
+import { NodesRowComponent } from './nodes-row/nodes-row.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    MetricComponent,
+    NodesComponent,
+    NodesRowComponent
   ],
   imports: [
     BrowserModule,
@@ -20,5 +28,6 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
