@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 
@@ -9,6 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MetricComponent } from './metric/metric.component';
 import { NodesComponent } from './nodes/nodes.component';
 import { NodesRowComponent } from './nodes-row/nodes-row.component';
+import { NodesDetailComponent } from './nodes-detail/nodes-detail.component';
+import { AlertComponent } from './alert/alert.component';
 
 
 
@@ -19,15 +21,18 @@ import { NodesRowComponent } from './nodes-row/nodes-row.component';
     DashboardComponent,
     MetricComponent,
     NodesComponent,
-    NodesRowComponent
+    NodesRowComponent,
+    NodesDetailComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
